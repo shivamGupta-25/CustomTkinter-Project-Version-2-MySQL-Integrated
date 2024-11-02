@@ -1,0 +1,13 @@
+        BackToWindow = OtherButton(master=self, text="Back", cursor="hand2", command=BackToWindow)
+        BackToWindow.place(x=163, y=305, anchor = tk.CENTER)
+
+
+        def BackToWindow():
+            self.place_forget()
+            self.app.window_frame = Window(self.app.bg_label, self.app)
+            self.app.window_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+
+
+                except sql.Error as e:
+                    # More specific error handling
+                    messagebox.showerror("Database Error", f"An error occurred: {e}")
